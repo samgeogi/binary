@@ -35,14 +35,14 @@ public class Urbanladder_Bookshelves {
 	{
     	Thread.sleep(5000);
     	try{
-    		driver.findElement(By.xpath("//*[@id=\"authentication_popup\"]/div[1]/div/div[2]/a[1]")).click();
+    		driver.findElement(By.xpath(jsonRead.readJSONData("xpath1"))).click();
     	}catch(Exception e)
     	{
-    		System.out.println("");
+    		System.out.println("error 1");
     	}
-		WebElement ele1 = driver.findElement(By.xpath("//input[@id='search']"));
+		WebElement ele1 = driver.findElement(By.xpath(jsonRead.readJSONData("xpath2")));
 		ele1.sendKeys("study chair");
-		driver.findElement(By.xpath("//button[@id='search_button']//span")).submit();
+		driver.findElement(By.xpath(jsonRead.readJSONData("xpath3"))).submit();
 		
 	}
     @Test(priority=2)

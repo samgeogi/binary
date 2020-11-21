@@ -6,8 +6,10 @@
     <classes>
       <class name="Urbanladder_Bookshelves">
         <methods>
-          <include name="operationStorage"/>
+          <include name="operationCategory"/>
           <include name="driverconfig"/>
+          <include name="operationSearch"/>
+          <include name="operationPrice"/>
         </methods>
       </class> <!-- Urbanladder_Bookshelves -->
     </classes>
